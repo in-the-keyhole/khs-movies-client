@@ -13,7 +13,7 @@ Prerequisite:
 4. Browser should open on http://localhost:3000
 5. Pre-load movies into mongo collection with this command: 
 
-`
+<pre><code>
 db.MOVIES.insertMany( 
 [  
     {  
@@ -38,5 +38,5 @@ db.MOVIES.insertMany(
     }
 ]
 )
-`
+</code></pre>
 The example movies list is included in "movies.json". 
