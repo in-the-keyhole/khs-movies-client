@@ -18,14 +18,9 @@ import React, {Component} from 'react';
 
 const Footer = () => 
 <div className="footer"><div className="container">
- 
-        <p>
+  
             @Keyhole software {(new Date().getFullYear())}
-            +
-            <a href="https://keyholesoftware.com/company/creations/content-usage-guidelines/">
-                Content Usage
-            </a>
-            Guidelines</p>
+       
     </div>
 
 </div>
