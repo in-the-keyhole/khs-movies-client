@@ -1,4 +1,4 @@
-## This is a movie application with react + redux 
+##  Movie  now showing application with react + redux 
 
   ## Installation
 
@@ -13,6 +13,7 @@ Prerequisite:
 4. Browser should open on http://localhost:3000
 5. Pre-load movies into mongo collection with this command: 
 
+`
 db.MOVIES.insertMany( 
 [  
     {  
@@ -35,7 +36,7 @@ db.MOVIES.insertMany(
        "vote_average":4.2,
        "rating":4
     }
-  )
-
-
+]
+)
+`
 The example movies list is included in "movies.json". 
