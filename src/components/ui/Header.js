@@ -10,7 +10,7 @@ const header = () => <div>
                 <Navbar>
                     <Navbar.Header>
                         <Navbar.Brand>
-                            <a href=".">Keyhole Software</a>
+                            <a href="https://keyholesoftware.com/">Keyhole Software</a>
                         </Navbar.Brand>
                     </Navbar.Header>
                     <Nav>
