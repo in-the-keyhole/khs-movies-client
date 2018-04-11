@@ -30,6 +30,17 @@
     box-shadow: 0 0 20px black;
 }
 
+
+#marker {
+    color: black;
+    width: 100%;
+    align-content: center;
+    padding: 5px;
+    background: white;
+}
+ 
+ 
+
 .logo {
     position: absolute;
     top: 10px;

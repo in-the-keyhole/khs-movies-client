@@ -14,60 +14,74 @@ const Register = ({
   }
 
   return (
-    <div>
-      <form onSubmit={submit}>
-        <div id="page-wrap">
-          <div >
-            <div className="row">
-              <div className="col-6">
-                Email:
-              </div>
-              <div className="col-6">
-                <input
-                  id="email"
-                  name="email"
-                  type="text"
-                  required 
-                  ref={input => _email = input}/>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col">
-                Password:
-              </div>
-              <div className="col">
-                <input
-                  id="password"
-                  name="password"
-                  type="password"
-                  required
-                  ref={input => _password = input}/>
-              </div>
-            </div>
 
-            <div className="row">
-              <div className="col">
-                Confirm Password:
-              </div>
-              <div className="col">
-                <input
-                  id="comfirmPassword"
-                  name="comfirmPassword"
-                  type="password"
-                  required
-                  ref={input => _comfirmPassword = input}/>
-              </div>
+    <form onSubmit={submit}>
+      <div id='marker'>
 
-            </div>
-
+        <div className="row">
+          <div className="col-sm-3"></div>
+          <div className="col-sm-3">
+            <label >
+              Email:
+            </label>
           </div>
-          <div>
-            <button type="submit">Submit</button>
+          <div className="col-sm-6">
+            <input
+              id="email"
+              name="email"
+              type="text"
+              required
+              size="30"
+              ref={input => _email = input}/>
+          </div>
+
+        </div>
+        <div className="row">
+          <div className="col-sm-3"></div>
+          <div className="col-sm-3">
+            <label >
+              Password:
+            </label>
+          </div>
+          <div className="col-sm-6">
+            <input
+              id="password"
+              name="password"
+              type="password"
+              size="30"
+              required
+              ref={input => _password = input}/>
           </div>
         </div>
 
-      </form>
-    </div>
+        <div className="row">
+          <div className="col-sm-3"></div>
+          <div className="col-sm-3">
+
+            <label>
+              Confirm Password:
+            </label>
+          </div>
+          <div className="col-sm-6">
+            <input
+              id="comfirmPassword"
+              name="comfirmPassword"
+              type="password"
+              size="30"
+              required
+              ref={input => _comfirmPassword = input}/>
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="col-sm-12">
+            <button type="submit">Submit</button>
+          </div>
+        </div>
+      </div>
+
+    </form>
+
   )
 }
 

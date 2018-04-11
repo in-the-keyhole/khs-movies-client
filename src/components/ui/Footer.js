@@ -14,14 +14,10 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import React, {Component} from 'react';
-
+import React  from 'react';
 const Footer = () => 
 <div className="footer"><div className="container">
-  
             @Keyhole software {(new Date().getFullYear())}
-       
     </div>
-
 </div>
 export default Footer

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {Nav, NavItem, Navbar, NavDropdown, MenuItem} from 'react-bootstrap';
+import {Nav, NavItem, Navbar} from 'react-bootstrap';
 import {BrowserRouter} from 'react-router-dom'
 
 const header = () => <div>

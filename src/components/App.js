@@ -1,5 +1,4 @@
 import React from 'react'
-import {connect} from 'react-redux'
 import {Route, Switch} from 'react-router-dom'
 import Movies from './container/MovieList.js'
 import Login from './container/Login.js'
@@ -8,7 +7,7 @@ import Register from './container/Register.js'
 import Header from './container/Header.js'
 import Home from './container/Home.js'
 
-const App = ({}) => (
+const App = () => (
     <div> 
       <Header/>
         <main>

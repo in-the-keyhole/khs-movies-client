@@ -1,16 +1,12 @@
 import {createStore, applyMiddleware, compose} from 'redux'
 import {routerMiddleware} from 'react-router-redux'
-import {combineReducers} from 'redux'
 import thunk from 'redux-thunk'
 import createHistory from 'history/createBrowserHistory'
 import rootReducer from '../reducers'
 
-import { Router, Route, browserHistory } from 'react-router'
-import {  routerReducer } from 'react-router-redux'
 
 
 export const history = createHistory()
-//export const history = syncHistoryWithStore(browserHistory, store)
 
 const initialState = { 
     credential:{},

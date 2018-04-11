@@ -19,29 +19,45 @@ const login = ({
 
         <form onSubmit={submit}>
           <div id="page-wrap">
-            <div>
-              Email:
-              <input
-                id="email"
-                name="email"
-                type="text"
-                required
-                ref={input => _email = input}/>
-            </div>
-            <div>
-              Password:
-              <input
-                id="password"
-                name="password"
-                type="password"
-                placeholder="password"
-                required
-                ref={input => _password = input}/>
+
+            <div className="row">
+              <div className="col-sm-3"></div>
+              <div className="col-sm-3">
+              <label > Email: </label>
+              </div>
+              <div className="col-sm-6">
+                <input
+                  id="email"
+                  name="email"
+                  type="text"
+                  required
+                  ref={input => _email = input}/>
+              </div>
             </div>
 
-            <div>
-              <button type="submit">Login</button>
+            <div className="row">
+              <div className="col-sm-3"></div>
+              <div className="col-sm-3">
+              <label >  Password: </label>
+              </div>
+
+              <div className="col-sm-3">
+                <input
+                  id="password"
+                  name="password"
+                  type="password"
+                  placeholder="password"
+                  required
+                  ref={input => _password = input}/>
+              </div>
             </div>
+
+            <div className="row">
+              <div>
+                <button type="submit">Login</button>
+              </div>
+            </div>
+
           </div>
         </form>
 
