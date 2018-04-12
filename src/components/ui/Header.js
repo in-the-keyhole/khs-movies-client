@@ -3,7 +3,7 @@ import React from 'react'
 import {Nav, NavItem, Navbar} from 'react-bootstrap';
 import {BrowserRouter} from 'react-router-dom'
 
-const header = () => <div>
+const header = (message) => <div>
     <BrowserRouter>
         <div>
             <div>
@@ -19,6 +19,10 @@ const header = () => <div>
                         <NavItem eventKey={3} href="/register">Register</NavItem>
                     </Nav>
                 </Navbar>
+            </div>
+
+            <div className="error">
+            Error:  {message.error}   
             </div>
         </div>
     </BrowserRouter>

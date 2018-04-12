@@ -9,14 +9,11 @@ import Register from '../ui/Register.js'
 
 class RegisterContainer extends Component {
     componentWillMount() {
-
-        // this
-        //     .props
-        //     .register();
+ 
     }
 
     render() {
-        return <Register register ={this.props.register}/>
+        return <Register register={this.props.register} />
     }
 }
 

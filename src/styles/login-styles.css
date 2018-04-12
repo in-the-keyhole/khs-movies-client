@@ -39,7 +39,13 @@
     background: white;
 }
  
- 
+ #login{
+    color:black;
+    width: 100%;
+    align-content: center;
+    padding: 5px;
+    background: yellow;
+ }
 
 .logo {
     position: absolute;

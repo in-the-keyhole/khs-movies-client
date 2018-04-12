@@ -23,7 +23,7 @@ export function login(email, password) {
         }).then((response) => {
             resolve(response.json());
         }).catch((error) => {
-            reject(error);
+            resolve(error.json());
         });
     })
 }
