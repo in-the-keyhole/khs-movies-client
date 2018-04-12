@@ -23,9 +23,9 @@ export function register(email, password, confirmPassword ) {
             mode: 'cors',
             body: JSON.stringify(myData)
         }).then((response) => {
-            resolve("registration successed");
+            resolve(response );
         }).catch((error) => {
-            reject(error);
+            resolve(error);
         });
     })
 }

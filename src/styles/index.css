@@ -9,3 +9,9 @@
     padding: 1em;
     border: 1px
   }
+
+  .error {
+    background-color: yellow;
+    color: red;
+    text-align: center;
+  }

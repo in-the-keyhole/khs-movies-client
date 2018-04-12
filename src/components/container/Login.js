@@ -9,7 +9,7 @@ import Login from '../ui/Login.js'
 
 class LoginContainer extends Component {
     render() {
-        return <Login   login ={this.props.login}/>
+        return <Login   login ={this.props.login} />
     }
 }
 const mapStateToProps = (state, props) => ({})

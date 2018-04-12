@@ -10,7 +10,9 @@ export const history = createHistory()
 
 const initialState = { 
     credential:{},
-    movies: []
+    movies: [],
+    message:{
+    }
 };
 const enhancers = {}
 

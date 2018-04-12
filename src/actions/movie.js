@@ -1,5 +1,5 @@
 import {fetChMovies, changeRating} from '../services/movie.js';
-import { push } from 'react-router-redux'
+import {push} from 'react-router-redux'
 import {c} from '../constants';
 
 var allMovies;
@@ -15,7 +15,7 @@ function loadMovies(dispatch) {
 }
 
 function searchMovieByName(name) {
-  searchName =name;
+  searchName = name;
   return (dispatch) => {
 
     var movies = allMovies.filter(movie => movie.title.toUpperCase().indexOf(name.toUpperCase()) !== -1);
@@ -40,30 +40,29 @@ export function searchMovie(name) {
 }
 
 export function changeMovieRating(movie, rating) {
- 
-  var index = allMovies.indexOf(movie); 
+
+  var index = allMovies.indexOf(movie);
   allMovies[index].rating = rating;
 
   return (dispatch) => {
     changeRating(movie, rating).then((responsd) => {
-      if (searchName){
+      if (searchName) {
         dispatch(searchMovie(searchName));
-      }else {
-      dispatch(loadMovies());
+      } else {
+        dispatch(loadMovies());
       }
-    }).catch((error)=>{
-      console.log ('changeMovieRating failed'); 
+    }).catch((error) => {
+      console.log('changeMovieRating failed');
     });
   }
 }
 
-export function logout (){
+export function logout() {
   return dispatch => {
-      localStorage.clear();
-      dispatch(push('/'));
+    localStorage.clear();
+    dispatch(push('/'));
   }
 }
-
 
 export const movieActions = {
   preloadMovies,
