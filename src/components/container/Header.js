@@ -14,9 +14,9 @@ class HeaderContainer extends Component {
         return <Header message= {this.props.message}/>
     }
 }
-
+//RegisterActions,LoginActions
 const mapStateToProps = (state, props) => ({message:state.message})
 
-const mapDispatchToProps = dispatch => bindActionCreators({RegisterActions,LoginActions}, dispatch);
+const mapDispatchToProps = dispatch => bindActionCreators({}, dispatch);
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(HeaderContainer))

@@ -8,21 +8,21 @@ export function registerUser(email, password, confirmPassword) {
   return dispatch => {
     register(email, password, confirmPassword).then(response => {
 
-      if (response.error != "") {
+      if ( response.error== "") {
         message = {
-          type: c.USER_REGISTER_SUCCESS,
-          error: ""
+          type: c.USER_REGISTER_FAILURE,
+          error: response.error 
         }
 
-        dispatch(registrationSuccess(message));
+        dispatch(registrationfailure(message));
         dispatch(push('/login'));
 
       } else {
         message = {
           type: c.USER_REGISTER_SUCCESS,
-          error: response.error
+          error: ""
         }
-        dispatch(registrationfailure(message));
+        dispatch(registrationSuccess(message));
       }
 
     }, error => {

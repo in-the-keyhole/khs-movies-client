@@ -9,11 +9,12 @@ import rootReducer from '../reducers'
 export const history = createHistory()
 
 const initialState = { 
-    credential:{},
+    
     movies: [],
-    message:{
-    }
+    message: ""
 };
+
+
 const enhancers = {}
 
 const middleware = [thunk, routerMiddleware(history)]

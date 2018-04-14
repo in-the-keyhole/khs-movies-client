@@ -60,7 +60,7 @@ export function changeMovieRating(movie, rating) {
 export function logout() {
   return dispatch => {
     localStorage.clear();
-    dispatch(push('/'));
+    dispatch(push('/login'));
   }
 }
 

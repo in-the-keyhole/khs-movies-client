@@ -4,31 +4,31 @@ import {push} from 'react-router-redux'
 
 function userLogin(email, password) {
 
-    var message = {}
+    //var message = {}
 
     return dispatch => {
 
         login(email, password).then(response => {
             if (response.error != undefined && response.error != '') {
-                message.error = response.error;
-                dispatch(failure(message));
+                //message.error = response.error;
+                dispatch(failure(response.error));
 
             } else {
                 localStorage.setItem("token", response.token);
                 localStorage.setItem("user", response.email);
-                message.error = "";
-                dispatch(success(message));
+                var  error = "";
+                dispatch(success(error));
                 dispatch(push('/movies'));
             }
 
         }, error => {
-            message.error = error;
-            dispatch(failure(message));
+            //message.error = error;
+            dispatch(failure(error));
             dispatch(push('/login'));
         })
             .catch(function (error) {
-                message.error = error;
-                dispatch(failure(message));
+                //message.error = error;
+                dispatch(failure(error));
                 dispatch(push('/login'));
             });
     };

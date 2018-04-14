@@ -19,12 +19,12 @@ const Register = ({
       <div id='marker'>
 
         <div className="row">
-          <div className="col-sm-4">
+          <div className="col-sm-2">
             <img
               src={`${process.env.PUBLIC_URL}/images/keyholelogo.png`}
               alt="keyhole logo"/>
           </div>
-          <div className="col-sm-8">
+          <div className="col-sm-10">
             <div className="row">
               <div className="col-sm-3"></div>
               <div className="col-sm-3">
