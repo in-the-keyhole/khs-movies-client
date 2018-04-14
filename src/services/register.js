@@ -25,7 +25,7 @@ export function register(email, password, confirmPassword ) {
         }).then((response) => {
             resolve(response );
         }).catch((error) => {
-            resolve(error);
+            reject(error);
         });
     })
 }

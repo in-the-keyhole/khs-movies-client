@@ -22,7 +22,7 @@ const header = (message) => <div>
             </div>
 
             <div className="error">
-            Error:  {message.error}   
+              {message}
             </div>
         </div>
     </BrowserRouter>
