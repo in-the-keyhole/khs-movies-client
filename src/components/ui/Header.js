@@ -3,7 +3,7 @@ import React from 'react'
 import {Nav, NavItem, Navbar} from 'react-bootstrap';
 import {BrowserRouter} from 'react-router-dom'
 
-const header = (message) => <div>
+const header = ({message}) => <div>
     <BrowserRouter>
         <div>
             <div>
@@ -22,7 +22,7 @@ const header = (message) => <div>
             </div>
 
             <div className="error">
-              {message}
+                {message.toString()}
             </div>
         </div>
     </BrowserRouter>
